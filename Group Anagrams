@@ -1,0 +1,10 @@
+from collections import defaultdict
+
+strs = ["eat","tea","tan","ate","nat","bat"]
+d = defaultdict(list)
+
+for word in strs:
+    key = tuple(sorted(word))
+    d[key].append(word)
+
+print(list(d.values()))

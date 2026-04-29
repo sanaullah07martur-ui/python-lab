@@ -1,0 +1,14 @@
+num = int(input("Enter a number: "))
+count = 0
+
+# Special case for zero
+if num == 0:
+    count = 1
+else:
+    # Use absolute value so it works for negative numbers
+    num = abs(num)
+    while num > 0:
+        num //= 10
+        count += 1
+
+print(f"The number of digits is: {count}")

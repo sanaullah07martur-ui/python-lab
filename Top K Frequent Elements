@@ -1,0 +1,8 @@
+from collections import Counter
+import heapq
+
+nums = [1,1,1,2,2,3]
+k = 2
+
+count = Counter(nums)
+print(heapq.nlargest(k, count.keys(), key=count.get))

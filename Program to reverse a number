@@ -1,0 +1,10 @@
+num = int(input("Enter a number: "))
+reverse = 0
+temp = num  # Using a temp variable keeps your original 'num' intact
+
+while temp > 0:
+    digit = temp % 10
+    reverse = (reverse * 10) + digit
+    temp //= 10
+
+print(f"The reverse of the number is: {reverse}")

@@ -1,0 +1,12 @@
+items = ["apple", "banana", "cherry", "date", "elderberry"]
+target = "cherry"
+
+# Search loop
+for item in items:
+    print(f"Checking: {item}...")
+    if item == target:
+        print(f"Found it! '{target}' is in the list.")
+        break  # This stops the loop immediately
+else:
+    
+    print("Item not found in the list.")
